@@ -7,15 +7,50 @@
     <title>Welcome to our survey</title>
 </head>
 <body>
+  
    <h1 id="title">my title</h1> 
    <p id ="description">this  survey helps us understand problems in third world countries</p>
    <form id="survey-form">
    <label for="name">Name:</label>
-   <input id="name" type="text" name="name">
-   <label for="email">Email:</label>
-   <input id="email" type="email" name="email" required>
-   <label for="number">Number:</label>
-   <input id="number" type="number" name="number">
+   <input id="name-label" type="text" name="name" placeholder="Enter your name">
+   <label for="email-label">Email:</label>
+   <input id="email-label" type="email" name="email" placeholder="Enter your email" required>
+   <label for="number-label">Number:</label>
+   <input id="number-label" type="number" name="number" min="32" max="100" placeholder="Enter your number">
+
+   <select id="dropdown">
+     <option>select your country</option>
+     <option for="bd">Bangladesh</option>
+     <option for="ep">Egypt</option>
+     <option for="other">Other</option>
+   </selece>
+
+   <label for="gender">Gender:</label>
+   <input type="radio" name="gender">
+   <label for="male">Male</label>
+   <input type="radio" name="gender">
+   <label for="female">Female</label>
+   <input type="radio" name="gender">
+   <label for="other">Others</label>
+
+   <p>What would you like to see improved?</p>
+   
+   <label>
+   <input type="checkbox" name"frontend" value="front"> Front end
+   </label>
+
+    <label>
+   <input type="checkbox" name"backend" value="back"> Back end
+   </label>
+
+    <label>
+   <input type="checkbox" name"fullStack" value="full"> Full Stack
+   </label>
+
+   <textarea rows="10" cols="30" placeholder="Write your message here"></teaxarea>
+
+  <input type="submit" value="Submit" id="submit">
+  
 </form>
 </body>
 </html>
